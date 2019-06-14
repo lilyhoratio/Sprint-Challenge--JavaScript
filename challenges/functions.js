@@ -34,6 +34,7 @@ consume(2,2,add); // 4
 consume(10,16,multiply); // 160
 consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
+// Must console.log to see results b/c assignment asks for function returns
 // console.log(consume(2,2,add)); // 4
 // console.log(consume(10,16,multiply)); // 160
 // console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
@@ -45,7 +46,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explanation: 
 // The variable `internal` is within the `nestedfunction()`'s scope/closure. 
 // When nestedFunction() is invoked, the function attempts to look for 
-// 'internal' within its function scope. Because it doesn't see it, it then looks
+// 'internal' within its functional scope. Because it doesn't find the variable, it then looks
 // outward to its closure.
 
 const external = "I'm outside the function";
